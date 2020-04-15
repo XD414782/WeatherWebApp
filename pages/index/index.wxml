@@ -1,0 +1,7 @@
+<import src="../content/content"/>
+<import src="../picker/picker"/>
+
+<block class="root">
+  <profile bindcustomevent="locationChange" profile="{{profile}}"></profile>
+  <content now="{{HeWeather6[0].now}}" transNowAttribute="{{transNowAttribute}}"></content>
+</block>

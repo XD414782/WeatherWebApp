@@ -1,0 +1,14 @@
+<!--pages/picker/picker.wxml-->
+<view class="picker-root">
+  <view class="headimage-box"><!-- 头像 -->
+    <image class="headimage" src="{{profile.headimage}}"></image>
+  </view>
+  
+  <view class="picker-box">
+    <picker class="picker" mode="region" bindchange="change" value="{{profile.region}}" custom-item="{{profile.customItem}}">
+      <view class="picker-location">
+        位置：{{profile.region[0]}}，{{profile.region[1]}}，{{profile.region[2]}}
+      </view>
+    </picker>
+  </view>
+</view>

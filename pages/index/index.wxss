@@ -1,0 +1,10 @@
+/* pages/index/index.wxss */
+@import "../picker/picker";
+@import "../content/content";
+page{
+  background-color: #FFF5EE;
+}
+.root{
+  height: 100%;
+  width: 100%;
+}

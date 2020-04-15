@@ -1,0 +1,19 @@
+<!--pages/content/content.wxml-->
+<view class="content-root">
+  <view class="weather-head-box"><!--温度 天气状态 -->
+    <text>{{now.fl}}℃ {{now.cond_txt}}</text>
+  </view>
+
+  <view class="weather-image-box"><!-- 天气图片 -->
+    <image class="weather-image" src="{{'../../static/img/cond-icon-heweather/'+now.cond_code+'.png'}}"></image>
+  </view>
+
+  <view class="weather-detail-box"><!--天气详细信息-->
+    <view wx:for="{{transNowAttribute}}" wx:for-item="item" wx:for-index="index" wx:key="index" class="weather-detail">
+      <view wx:for="{{now}}" wx:for-item="j" wx:for-index="k" wx:key="k"  wx:if="{{k==index}}">
+        <text>{{item}}</text>
+        <view class="weather-detail-value">{{j}}</view>
+      </view>
+    </view>
+  </view>
+</view>
