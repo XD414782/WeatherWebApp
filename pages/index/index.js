@@ -24,7 +24,7 @@ Page({
     const that = this
     let location = e.detail.region[1]
     wx.request({
-      url: 'http://120.78.187.144:8090/WeatherWebApp/weather/change',
+      url: '你的url',
       data:{
         "location": location
       },
@@ -45,7 +45,7 @@ Page({
     // 因为回调函数中的作用域已经脱离了调用函数，因此需要在回调函数外边把this赋给一个新的变量才可
     const that = this;
     wx.request({
-      url: 'http://120.78.187.144:8090/WeatherWebApp/weather/init',
+      url: '你的url',
       success: function (res) {
         that.setData({ "HeWeather6":res.data.HeWeather6})
       },
